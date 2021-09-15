@@ -6,7 +6,7 @@ import LandingPage from './pages/LandingPage';
 import HomePage from './pages/HomePage';
 import DashboardPage from './pages/DashBoardPage';
 import SettingsPage from './pages/SettingsPage';
-import { NavBar } from './ components';
+import { NavBar } from './components';
 import { useAuthStore } from './services/zustand/auth';
 
 const App = () => {
