@@ -25,7 +25,7 @@ const DashboardDisplay = () => {
     <Col span={15}>
       <Statistic id='stat6' title="Challenges Accepted" value={3} />
     </Col>
-  </Row>,
+  </Row>
   </div>;
 };
 
