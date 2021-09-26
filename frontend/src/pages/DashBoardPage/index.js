@@ -8,9 +8,9 @@ const DashboardPage = () => {
   return (
     <div className='container'>
       <h1>My Dashboard</h1>
-      <DashboardDisplay />
-      <Buttons btnName='Edit Game' />
-      <Buttons btnName='Edit Quiz' />
+      <DashboardDisplay id='dashboard'/>
+      <Buttons id='btn1' btnName='Edit Game' />
+      <Buttons id='btn2' btnName='Edit Quiz' />
       <LDTable />
     </div>
   );
