@@ -64,7 +64,7 @@ const GameCreationPage = () => {
 
       <Form.Item label="Number of Quizzes">
         <Form.Item
-          name="no-quizzes"
+          name="Number of Quizzes"
           noStyle
           rules={[
             {
@@ -79,7 +79,7 @@ const GameCreationPage = () => {
 
       <Form.Item label="Number of Questions for Each Quiz: ">
         <Form.Item
-          name="quiz-qn-no"
+          name="Number of Questions"
           noStyle
           rules={[
             {
