@@ -16,3 +16,8 @@
 .menu-trigger:hover {
   cursor: pointer;
 }
+
+.avatar-container {
+  margin-left: auto;
+  margin-right: 5%;
+}
