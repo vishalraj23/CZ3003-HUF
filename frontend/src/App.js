@@ -8,6 +8,8 @@ import { HeaderBar, SideNav, SiteFooter } from "./components";
 import LandingPage from "./pages/LandingPage";
 import HomePage from "./pages/HomePage";
 import DashboardPage from "./pages/DashBoardPage";
+import EditGamePage from './pages/EditGamePage';
+import EditQuizPage from './pages/EditQuizPage';
 import GameCreationPage from "./pages/GameCreationPage";
 import SettingsPage from "./pages/SettingsPage";
 import { useAuthStore } from "./services/zustand/auth";
@@ -37,10 +39,11 @@ const App = () => {
               <Route path="/" exact component={HomePage} />
               <Route path="/dashboard" exact component={DashboardPage} />
               <Route path="/settings" exact component={SettingsPage} />
-
               {
                 "/* To-do: to be routed from home page later on (cuz idk how do now)*/"
               }
+              <Route path='/dashboard/editgame' exact component={EditGamePage} /> 
+              <Route path='/dashboard/editquiz' exact component={EditQuizPage} />
               <Route path="/gamecreation" exact component={GameCreationPage} />
             </Switch>
           </Content>
