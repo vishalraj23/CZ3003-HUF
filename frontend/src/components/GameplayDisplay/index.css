@@ -1,12 +1,7 @@
-.container {
-
+.question-container {
+    width: 1280px;
     align-items: center;
+    max-height: max-content;
 } 
 
-.question-con {
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 5px #c7c6c6;
-    border-radius: 5px;
-    border-bottom: 5px solid orange;
-  }
+  

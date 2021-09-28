@@ -1,7 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
-import { render } from "react-dom";
-import { Radio, Input, Space, Row } from 'antd';
+import { Radio, Space, Row } from 'antd';
 import "antd/dist/antd.css";
 
 import './index.css';
@@ -12,24 +11,46 @@ const GameplayDisplay = () => {
 
     const onChange = (e) => {
         setChange({value: e.target.value})
+        console.log(e.target.value);
     }
 
   return (
-    <div className='container'>
-       <div className='container'>
-           <Row><h1>Hello</h1></Row>
-            <Radio.Group onChange={onChange} value={value}>
+    <div className='question-container'>
+       <div className='question-container'>
+           <Row><h1>Question 1) What is the name of this game? </h1></Row>
+            <Radio.Group name="radiogroup" onChange={onChange} defaultValue={value}>
                 <Space direction="vertical">
-                    <Radio value={1}>Option A</Radio>
-                    <Radio value={2}>Option B</Radio>
-                    <Radio value={3}>Option C</Radio>
-                    <Radio value={4}>Option D</Radio>
+                    <Radio value={1}>CLOCKWORKS</Radio>
+                    <Radio value={2}>Clock game</Radio>
+                    <Radio value={3}>Clock</Radio>
+                    <Radio value={4}>None of the Above</Radio>
                 </Space>
             </Radio.Group>
-       </div>
-            
-                            
-        
+        </div> 
+        <br/>
+        <div className='question-container'>
+            <Row><h1>Question 1) What is the name of this game? </h1></Row>
+            <Radio.Group name="radiogroup" onChange={onChange} defaultValue={value}>
+                <Space direction="vertical">
+                    <Radio value={1}>CLOCKWORKS</Radio>
+                    <Radio value={2}>Clock game</Radio>
+                    <Radio value={3}>Clock</Radio>
+                    <Radio value={4}>None of the Above</Radio>
+                </Space>
+            </Radio.Group>
+        </div> 
+        <br/>
+        <div className='question-container'>
+           <Row><h1>Question 1) What is the name of this game? </h1></Row>
+            <Radio.Group name="radiogroup" onChange={onChange} defaultValue={value}>
+                <Space direction="vertical">
+                    <Radio value={1}>CLOCKWORKS</Radio>
+                    <Radio value={2}>Clock game</Radio>
+                    <Radio value={3}>Clock</Radio>
+                    <Radio value={4}>None of the Above</Radio>
+                </Space>
+            </Radio.Group>
+       </div> 
     </div>
   );
 };
