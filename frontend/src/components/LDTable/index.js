@@ -14,12 +14,12 @@ const columns = [
         {
             title: 'Name',
             dataIndex: 'name',
-            width: 200,
+            width: 150,
         },
         {
             title: 'Quiz 1',
             dataIndex: 'quiz1',
-            width: 150,
+            width: 100,
             sorter: {
                 compare: (a, b) => a.quiz1 - b.quiz1,
             },
@@ -27,7 +27,7 @@ const columns = [
         {
             title: 'Quiz 2',
             dataIndex: 'quiz2',
-            width: 150,
+            width: 100,
             sorter: {
                 compare: (a, b) => a.quiz2 - b.quiz2,
             },
@@ -35,7 +35,7 @@ const columns = [
           {
             title: 'Quiz 3',
             dataIndex: 'quiz3',
-            width: 150,
+            width: 100,
             sorter: {
                 compare: (a, b) => a.quiz3 - b.quiz3,
             },

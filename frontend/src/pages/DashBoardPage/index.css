@@ -1,5 +1,25 @@
-.container {
+.container1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+}
+
+.container3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container3-item{
+ 
+}
+
