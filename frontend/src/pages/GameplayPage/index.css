@@ -1,0 +1,21 @@
+.container {
+    align-items: center;
+    color: blue
+  }
+.box-1 {
+    flex:6
+}
+.timer-con {
+    display: flex-end;
+    justify-content: right;
+    align-items: center;
+    color: blue
+}
+  
+.question-con {
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 5px #c7c6c6;
+    border-radius: 5px;
+    border-bottom: 5px solid orange;
+  }

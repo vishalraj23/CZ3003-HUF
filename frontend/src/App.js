@@ -9,6 +9,7 @@ import LandingPage from './pages/LandingPage';
 import HomePage from './pages/HomePage';
 import DashboardPage from './pages/DashBoardPage';
 import SettingsPage from './pages/SettingsPage';
+import GameplayPage from './pages/GameplayPage';
 import { useAuthStore } from './services/zustand/auth';
 
 const { Content } = Layout;
@@ -36,6 +37,7 @@ const App = () => {
               <Route path='/' exact component={HomePage} />
               <Route path='/dashboard' exact component={DashboardPage} />
               <Route path='/settings' exact component={SettingsPage} />
+              <Route path='/gameplay' exact component={GameplayPage} />
             </Switch>
           </Content>
           <SiteFooter />

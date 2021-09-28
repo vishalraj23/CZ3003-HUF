@@ -1,0 +1,74 @@
+{
+    "Quiz": [
+      {
+          "id": "1",
+          "qText": "What is 2+2?",
+          "options" : [{"text": "5"}, {"text": "7"}, {"text": "6"}, {"text": "4"}],
+          "answer": "4",
+          "marks" : 1
+      },
+      {
+          "id": "2",
+          "qText": "What is an apple?",
+          "options" : [{"text": "house"}, {"text": "car"}, {"text": "fruit"}, {"text": "floor"}],
+          "answer": "fruit",
+          "marks" : 1
+      },
+      {
+          "id": "3",
+          "qText": "What is the name of the animal with the longest neck?",
+          "options" : [{"text": "hippopotamus"}, {"text": "giraffe"}, {"text": "dog"}, {"text": "tiger"}],
+          "answer": "giraffe",
+          "marks" : 1
+      },
+      {
+            "id": "4",
+            "qText": "What is 5+2?",
+            "options" : [{"text": "7"}, {"text": "10"}, {"text": "8"}, {"text": "6"}],
+            "answer": "7",
+            "marks" : 1
+      },
+      {
+          "id": "5",
+          "qText": "What is 2+2?",
+          "options" : [{"text": "5"}, {"text": "7"}, {"text": "6"}, {"text": "4"}],
+          "answer": "4",
+          "marks" : 1
+      },
+      {
+          "id": "6",
+          "qText": "What is 2+2?",
+          "options" : [{"text": "5"}, {"text": "7"}, {"text": "6"}, {"text": "4"}],
+          "answer": "4",
+          "marks" : 1
+      },
+      {
+          "id": "7",
+          "qText": "What is 2+2?",
+          "options" : [{"text": "5"}, {"text": "7"}, {"text": "6"}, {"text": "4"}],
+          "answer": "4",
+          "marks" : 1
+      },
+      {
+          "id": "8",
+          "qText": "What is 2+2?",
+          "options" : [{"text": "5"}, {"text": "7"}, {"text": "6"}, {"text": "4"}],
+          "answer": "4",
+          "marks" : 1
+      },
+      {
+          "id": "9",
+          "qText": "What is 2+2?",
+          "options" : [{"text": "5"}, {"text": "7"}, {"text": "6"}, {"text": "4"}],
+          "answer": "4",
+          "marks" : 1
+      },
+      {
+          "id": "10",
+          "qText": "What is 2+2?",
+          "options" : [{"text": "5"}, {"text": "7"}, {"text": "6"}, {"text": "4"}],
+          "answer": "4",
+          "marks" : 1
+      }
+    ]
+  }
