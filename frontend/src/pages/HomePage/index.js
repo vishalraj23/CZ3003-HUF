@@ -1,9 +1,11 @@
 import * as React from 'react';
 import { Card } from 'antd';
+import { useHistory } from 'react-router-dom';
 
 import './index.css';
 
 const HomePage = () => {
+  const history = useHistory();
   return (
     <div className='container'>
       <div className='info-container'>
@@ -18,6 +20,9 @@ const HomePage = () => {
         </p>
         <div className='card-container'>
           <Card
+            onClick={() => {
+              history.push('/games');
+            }}
             className='card'
             hoverable
             cover={

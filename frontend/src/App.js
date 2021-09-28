@@ -7,6 +7,7 @@ import './App.css';
 import { HeaderBar, SideNav, SiteFooter } from './components';
 import LandingPage from './pages/LandingPage';
 import HomePage from './pages/HomePage';
+import GamesPage from './pages/GamesPage';
 import DashboardPage from './pages/DashBoardPage';
 import SettingsPage from './pages/SettingsPage';
 import { useAuthStore } from './services/zustand/auth';
@@ -36,6 +37,7 @@ const App = () => {
               <Route path='/' exact component={HomePage} />
               <Route path='/dashboard' exact component={DashboardPage} />
               <Route path='/settings' exact component={SettingsPage} />
+              <Route path='/games' exact component={GamesPage} />
             </Switch>
           </Content>
           <SiteFooter />
