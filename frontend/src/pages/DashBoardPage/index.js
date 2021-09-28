@@ -26,12 +26,14 @@ const DashboardPage = () => {
       <div className='container3'>
         <div className='container3-item'>
           <Button type="primary">
-            <Link to={'dashboard/editgame'}>Edit Game</Link>    {/* internal link to edit game page */}
+            {/* internal link to edit game page */}
+            <Link to={'dashboard/editgame'}>Edit Game</Link>    
           </Button>
         </div>
         <div className='container3-item'>
           <Button type="primary">
-            <Link to={'dashboard/editquiz'}>Edit Quiz</Link>    {/* internal link to edit quiz page */}
+            {/* internal link to edit quiz page */}
+            <Link to={'dashboard/editquiz'}>Edit Quiz</Link>    
           </Button>
         </div>
       </div>

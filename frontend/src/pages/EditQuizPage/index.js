@@ -57,7 +57,8 @@ const EditQuizPage = () => {
       
       <div className='container 3'>
         <Button type="primary">
-          <Link to={'/dashboard'}>Back</Link>     {/* internal link back to dashboard page */}
+          {/* internal link back to dashboard page */}
+          <Link to={'/dashboard'}>Back</Link>     
         </Button>
         {/* popup window component with its parameter information */}
         <Pop btnName='Save Changes' title='Save Confirmation' desc='Confirm changes?'/>
