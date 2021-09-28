@@ -1,69 +1,34 @@
 import * as React from 'react';
-import { useState } from 'react';
-import { Button, Input, InputNumber, Form, Modal} from 'antd';
+import { Button, Input, InputNumber, Form } from 'antd';
 import { Link } from 'react-router-dom';
+import { Pop } from '../../components/Popup';
 import './index.css';
 import TextArea from 'rc-textarea';
 
-//function to update input number
+//function to update input number when user click on the +/- sign
 function onChange(value) {
   console.log('changed', value);
 }
 
-/* //funtion for delete confirmation button
-function confirm(e) {
-  console.log(e);
-  message.success('Quiz Successfully Deleted');
-}
-
-function cancel(e) {
-  console.log(e);
-} */
-
-
-//internal component for pop out window to delete game
-const Pop = () => {
-  const [isModalVisible, setIsModalVisible] = useState(false);
-
-  const showModal = () => {
-    setIsModalVisible(true);
-  };
-
-  const handleOk = () => {
-    setIsModalVisible(false);
-  };
-
-  const handleCancel = () => {
-    setIsModalVisible(false);
-  };
-
-  return (
-    <>
-      <Button type="primary" danger onClick={showModal}>Delete Quiz</Button>
-      <Modal title="Delete Quiz Confirmation" visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
-        <p>Are you sure you want to delete this quiz?</p>
-      </Modal>
-    </>
-  );
-};
-
+//function to include the components needed and display the information for edit quiz page
 const EditQuizPage = () => {
   return (
     <div>
       <div className='container1'>
         <h1>Edit Quiz Page</h1>
-        {/* <Popconfirm 
-          title='Are you sure you want to delete this quiz?'
-          onConfirm={confirm}
-          onCancel={cancel}
-          okText="Yes"
-          cancelText="No"
-        >
-          <Button type="primary" danger>Delete Quiz</Button>
-        </Popconfirm> */}
-        <Pop />
+        {/* popup window component with its parameter information */}
+        <Pop btnName='Delete Quiz' title='Delete Quiz Confirmation' desc='Are you sure you want to delete this quiz?' danger='true'/>
       </div>
 
+      {/* 
+      form to collect user input to update database when user edits the quiz
+      
+      label: name of the data input field
+      placeholder: text displayed inside input field to indicate what to input
+      min{}: min value for input number field
+      max{}: max value for input number field
+      defaultValue{}: default value that is displayed for input number field
+      */}
       <div className='container2'>
         <Form>
           <Form.Item label="Quiz Description">
@@ -90,11 +55,12 @@ const EditQuizPage = () => {
         </Form>
       </div>
       
-      <div>
+      <div className='container 3'>
         <Button type="primary">
-          <Link to={'/dashboard'}>Back</Link>
+          <Link to={'/dashboard'}>Back</Link>     {/* internal link back to dashboard page */}
         </Button>
-        <Button type="primary">Save Changes</Button>
+        {/* popup window component with its parameter information */}
+        <Pop btnName='Save Changes' title='Save Confirmation' desc='Confirm changes?'/>
       </div>
 
     </div>

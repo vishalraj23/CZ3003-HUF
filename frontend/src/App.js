@@ -38,7 +38,9 @@ const App = () => {
               <Route path='/' exact component={HomePage} />
               <Route path='/dashboard' exact component={DashboardPage} />
               <Route path='/settings' exact component={SettingsPage} />
-              <Route path='/dashboard/editgame' exact component={EditGamePage} />
+              
+              {/* included two new paths for the edit of game and quiz */}
+              <Route path='/dashboard/editgame' exact component={EditGamePage} /> 
               <Route path='/dashboard/editquiz' exact component={EditQuizPage} />
             </Switch>
           </Content>

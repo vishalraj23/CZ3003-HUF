@@ -1,10 +1,11 @@
 import * as React from 'react';
-import { DashboardDisplay } from '../../components/DashboardDisplay';
+import { Stats } from '../../components/DashboardStats';
 import { LDTable } from '../../components/LDTable';
 import { Button } from 'antd';
 import './index.css';
 import { Link } from 'react-router-dom';
 
+//function to include the components needed and display the information for dashboard
 const DashboardPage = () => {
   return (
     <div>
@@ -15,33 +16,25 @@ const DashboardPage = () => {
 
       <div className='container2'>
         <div className='item'>
-          <DashboardDisplay />
+          <Stats />                 {/* stats component */}
         </div>
         <div className='item'>
-          <LDTable />
+          <LDTable />               {/* leader board table component */}
         </div>
       </div>
         
       <div className='container3'>
         <div className='container3-item'>
           <Button type="primary">
-            <Link to={'dashboard/editgame'}>Edit Game</Link>
+            <Link to={'dashboard/editgame'}>Edit Game</Link>    {/* internal link to edit game page */}
           </Button>
         </div>
         <div className='container3-item'>
           <Button type="primary">
-            <Link to={'dashboard/editquiz'}>Edit Quiz</Link>
+            <Link to={'dashboard/editquiz'}>Edit Quiz</Link>    {/* internal link to edit quiz page */}
           </Button>
         </div>
       </div>
-      {/* <DashboardDisplay id='dashboard'/>
-      <LDTable />
-      <Button id='btn1' type="primary">
-        <Link to={'dashboard/editgame'}>Edit Game</Link>
-      </Button>
-      <Button id='btn2' type="primary">
-        <Link to={'dashboard/editquiz'}>Edit Quiz</Link>
-      </Button> */}
       
     </div>
   );
