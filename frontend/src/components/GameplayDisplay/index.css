@@ -4,4 +4,9 @@
     max-height: max-content;
 } 
 
+.button-container{
+    align-items: center;
+    justify-content: center;
+    color: orange;
+}
   

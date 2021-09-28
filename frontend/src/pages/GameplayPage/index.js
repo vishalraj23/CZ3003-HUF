@@ -24,7 +24,7 @@ const GameplayPage = () => {
   return (
     <div>
       <div className='header-container'>
-        <h2> CLOCKWORKS | Quiz 1 </h2>
+        <h2 style={{ color: "orange" }}> CLOCKWORKS | Quiz 1 </h2>
         <div className='timer-con'>
           <Countdown title='Timer' value={deadline} onTimeUp={onTimeUp} />
         </div>
