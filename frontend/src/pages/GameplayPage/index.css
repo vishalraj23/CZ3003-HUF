@@ -1,21 +1,17 @@
-.container {
-    align-items: center;
-    color: blue
-  }
-.box-1 {
-    flex:6
+.header-container {
+  display: flex;
+  align-items: center;
 }
 .timer-con {
-    display: flex-end;
-    justify-content: right;
-    align-items: center;
-    color: blue
+  margin-left: auto;
+  justify-content: right;
+  align-items: center;
 }
-  
+
 .question-con {
-    padding: 20px;
-    margin-bottom: 20px;
-    box-shadow: 0 0 5px #c7c6c6;
-    border-radius: 5px;
-    border-bottom: 5px solid orange;
-  }
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 0 5px #c7c6c6;
+  border-radius: 5px;
+  border-bottom: 5px solid orange;
+}
