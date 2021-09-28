@@ -5,6 +5,10 @@ import "antd/dist/antd.css";
 
 import './index.css';
 
+/*
+function to display the questions in the quiz and return the marks gotten (currenty not done)
+ */
+
 const GameplayDisplay = () => {
 
     const [value, setChange] = useState(1);
@@ -18,7 +22,7 @@ const GameplayDisplay = () => {
     <div className='question-container'>
        <div className='question-container'>
            <Row><h1>Question 1) What is the name of this game? </h1></Row>
-            <Radio.Group name="radiogroup" onChange={onChange} defaultValue={value}>
+            <Radio.Group name="radiogroup" onChange={onChange} defaultValue={null}>
                 <Space direction="vertical">
                     <Radio value={1}>CLOCKWORKS</Radio>
                     <Radio value={2}>Clock game</Radio>
@@ -30,7 +34,7 @@ const GameplayDisplay = () => {
         <br/>
         <div className='question-container'>
             <Row><h1>Question 1) What is the name of this game? </h1></Row>
-            <Radio.Group name="radiogroup" onChange={onChange} defaultValue={value}>
+            <Radio.Group name="radiogroup" onChange={onChange} defaultValue={null}>
                 <Space direction="vertical">
                     <Radio value={1}>CLOCKWORKS</Radio>
                     <Radio value={2}>Clock game</Radio>
@@ -42,7 +46,7 @@ const GameplayDisplay = () => {
         <br/>
         <div className='question-container'>
            <Row><h1>Question 1) What is the name of this game? </h1></Row>
-            <Radio.Group name="radiogroup" onChange={onChange} defaultValue={value}>
+            <Radio.Group name="radiogroup" onChange={onChange} defaultValue={null}>
                 <Space direction="vertical">
                     <Radio value={1}>CLOCKWORKS</Radio>
                     <Radio value={2}>Clock game</Radio>
