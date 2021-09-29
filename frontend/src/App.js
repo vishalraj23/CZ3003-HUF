@@ -7,6 +7,7 @@ import "./App.css";
 import { HeaderBar, SideNav, SiteFooter } from "./components";
 import LandingPage from "./pages/LandingPage";
 import HomePage from "./pages/HomePage";
+import GamesPage from './pages/GamesPage';
 import DashboardPage from "./pages/DashBoardPage";
 import EditGamePage from './pages/EditGamePage';
 import EditQuizPage from './pages/EditQuizPage';
@@ -39,6 +40,7 @@ const App = () => {
               <Route path="/" exact component={HomePage} />
               <Route path="/dashboard" exact component={DashboardPage} />
               <Route path="/settings" exact component={SettingsPage} />
+              <Route path='/games' exact component={GamesPage} />
               {
                 "/* To-do: to be routed from home page later on (cuz idk how do now)*/"
               }
