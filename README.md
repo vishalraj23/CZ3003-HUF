@@ -55,7 +55,9 @@ yarn build
 
 2. Create authentication user
 	> create user admin identified by ‘password';
+
 	> grant all on project_huf.* to ‘admin’@’%’;
+	
 	> flush priviledges;
 
 ## 4. Setting up Project 
