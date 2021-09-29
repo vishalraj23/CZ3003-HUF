@@ -1,6 +1,5 @@
 @import '~antd/dist/antd.css';
 .App {
-  width: 100vw;
   min-height: 100vh;
 }
 

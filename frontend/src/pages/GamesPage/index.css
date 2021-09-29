@@ -1,13 +1,13 @@
-.container {
-  width: 100%;
+.game-page-container {
+  min-width: 1000px;
   height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
-.heading {
+.game-page-heading {
   font-style: normal;
   font-weight: bold;
   font-size: 30px;
@@ -15,7 +15,7 @@
   color: #ff8a00;
 }
 
-.header-container {
+.game-page-header-container {
   width: 90%;
   min-height: 80px;
   display: flex;
@@ -48,11 +48,11 @@
   font-size: 18px;
   line-height: 21px;
   color: #5c5c5c;
+  margin-bottom: 40px;
 }
 
-.card-container {
+.games-container {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
-  padding: 30px;
 }
