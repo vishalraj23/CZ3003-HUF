@@ -1,19 +1,50 @@
 
-.login-form {
-  max-width: 300px;
-
-}
-.login-form-forgot {
-  float: left;
-}
-.ant-col-rtl .login-form-forgot {
-  float: right;
-}
-.login-form-button {
-  width: 100%;
-}
-
 .site-card-wrapper {
   padding: 30px;
   background: #FFF7DF;
+  align-items: center;
 }
+
+.login-form {
+  max-width: 300px;
+  align-items: center;
+}
+
+.login-form-forgot {
+  float: right;
+  color: #FF8A00;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: #FF8A00;
+  border-color: #FF8A00;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active {
+  border-bottom: 2px solid #FF8A00 !important;
+  z-index: 2;
+  color:#FF8A00;
+}
+
+.login-form-button {
+  background-color: #FF8A00;
+  border-color: #FF8A00;
+  width: 100%;
+}
+.login-form-button:hover {
+  background-color: #fda33d;
+  border-color: #fda33d;
+  width: 100%;
+}
+
+.fb-login-form-button {
+  background-color: #4B629E;
+  border-color: #4B629E;
+  width: 100%;
+}
+.fb-login-form-button:hover {
+  background-color: #1590D8;
+  border-color: #1590D8;
+  width: 100%;
+}
+

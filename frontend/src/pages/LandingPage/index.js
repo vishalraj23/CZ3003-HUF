@@ -18,7 +18,8 @@ const LandingPage = () => {
 
   return (
     <div className="site-card-wrapper">
-      <Card title="Profile" bordered={true} style={{ width: 300 }}>
+      <Card title="Profile" bordered={true} style={{ width: 400 }} headStyle={{ fontSize: 24, }}>
+
         <Tabs defaultActiveKey="1" onChange={callback}>
           <TabPane tab="Sign In" key="1">
             <Form
@@ -57,7 +58,7 @@ const LandingPage = () => {
               </Form.Item>
 
               <Form.Item name="remember" valuePropName="checked" noStyle>
-                <Checkbox>Keep me signed in</Checkbox>
+                <Checkbox className="login-form-checkbox">Keep me signed in</Checkbox>
               </Form.Item>
               <Form.Item>
                 <a className="login-form-forgot" href="">
@@ -70,7 +71,7 @@ const LandingPage = () => {
                   Sign in
                 </Button>
                 or
-                <Button type="primary" shape="round" icon={<FacebookFilled />} htmlType="submit" className="login-form-button">
+                <Button type="primary" shape="round" icon={<FacebookFilled />} htmlType="submit" className="fb-login-form-button">
                   Sign in with Facebook
                 </Button>
               </Form.Item>
@@ -139,28 +140,24 @@ const LandingPage = () => {
                 />
               </Form.Item>
               <Form.Item name="remember" valuePropName="checked" noStyle>
-                <Checkbox>I accept the terms and the privacy policy</Checkbox>
-              </Form.Item>
-              <Form.Item>
-                <a className="login-form-forgot" href="">
-                  Forgot password
-                </a>
+                <Checkbox className="login-form-checkbox">I accept the terms and the privacy policy</Checkbox>
               </Form.Item>
 
               <Form.Item>
+                <br />
                 <Button type="primary" shape="round" htmlType="submit" className="login-form-button">
                   Register
                 </Button>
                 or
-                <Button type="primary" shape="round" icon={<FacebookFilled />} htmlType="submit" className="login-form-button">
+                <Button type="primary" shape="round" icon={<FacebookFilled />} htmlType="submit" className="fb-login-form-button">
                   Register with Facebook
                 </Button>
               </Form.Item>
             </Form>
           </TabPane>
         </Tabs>
-      </Card>
-    </div>
+      </Card >
+    </div >
   );
 };
 

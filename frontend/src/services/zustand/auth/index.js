@@ -2,7 +2,7 @@ import create from 'zustand';
 
 const initialState = {
   userInfo: null,
-  signedIn: true,
+  signedIn: false,
   isLoading: false,
 };
 
