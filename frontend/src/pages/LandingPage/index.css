@@ -1,5 +1,19 @@
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+
+.login-form {
+  max-width: 300px;
+
+}
+.login-form-forgot {
+  float: left;
+}
+.ant-col-rtl .login-form-forgot {
+  float: right;
+}
+.login-form-button {
+  width: 100%;
+}
+
+.site-card-wrapper {
+  padding: 30px;
+  background: #FFF7DF;
 }
