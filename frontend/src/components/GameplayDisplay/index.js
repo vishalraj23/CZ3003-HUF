@@ -52,6 +52,7 @@ const GameplayDisplay = ({
           </div>
         );
       })}
+      <br />
       <div className='button-container'>
         <Button
           type='primary'

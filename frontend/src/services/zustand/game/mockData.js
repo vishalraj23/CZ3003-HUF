@@ -109,6 +109,7 @@ export const mockQuizzes = [
       },
     ],
     answerValue: 1,
+    answerMarks: 1,
   },
   {
     question: 'What is 2+2?',
@@ -132,6 +133,7 @@ export const mockQuizzes = [
       },
     ],
     answerValue: 2,
+    answerMarks: 1,
   },
   {
     question: 'What is our group name?',
@@ -155,5 +157,31 @@ export const mockQuizzes = [
       },
     ],
     answerValue: 4,
+    answerMarks: 1,
   },
+  {
+    question: 'What is the name of the animal with the longest neck??',
+    questionId: 4,
+    options: [
+      {
+        value: 1,
+        text: 'hippopotamus',
+      },
+      {
+        value: 2,
+        text: 'giraffe',
+      },
+      {
+        value: 3,
+        text: 'dog',
+      },
+      {
+        value: 4,
+        text: 'tiger',
+      },
+    ],
+    answerValue: 2,
+    answerMarks: 1,
+  },
+  
 ];
