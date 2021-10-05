@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import "antd/dist/antd.css";
 import "./index.css";
 import { Tag, Tooltip, Form, Input, Button, InputNumber } from "antd";
@@ -126,7 +126,11 @@ const GameCreationPage = () => {
             ]}
           >
             {/*To do: To set a default value of 1*/}
-            <InputNumber defaultValue={1} min={1} max={5} />
+            <InputNumber
+              defaultValue={1}
+              min={1}
+              max={5}
+            />
           </Form.Item>
 
           <Form.Item
@@ -139,8 +143,11 @@ const GameCreationPage = () => {
               },
             ]}
           >
-            {/*To do: To set a default value of 1*/}
-            <InputNumber defaultValue={1} min={1} max={10} />
+            <InputNumber
+              defaultValue={1}
+              min={1}
+              max={10}
+            />
           </Form.Item>
 
           <Form.Item label="ENTER RELEVANT GAME TAGS">
