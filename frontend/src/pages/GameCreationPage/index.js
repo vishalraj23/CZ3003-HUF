@@ -6,6 +6,7 @@ import { PlusOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
 
 const GameCreationPage = () => {
+
   const onFinish = (values) => {
     console.log("Success:", values);
   };
@@ -14,7 +15,6 @@ const GameCreationPage = () => {
     console.log("Failed:", errorInfo);
   };
 
-  //tags
   const [tags, setTags] = React.useState(["Games"]);
   const [inputValue, setInputValue] = React.useState("");
   const [inputVisible, setInputVisible] = React.useState(false);
@@ -95,6 +95,7 @@ const GameCreationPage = () => {
             rules={[
               {
                 required: true,
+                message: "Please input the Game Name",
               },
             ]}
           >
@@ -107,6 +108,7 @@ const GameCreationPage = () => {
             rules={[
               {
                 required: true,
+                message: "Please input the Game Description",
               },
             ]}
           >
@@ -119,11 +121,12 @@ const GameCreationPage = () => {
             rules={[
               {
                 required: true,
+                message: "Please input the number of quizzes",
               },
             ]}
           >
             {/*To do: To set a default value of 1*/}
-            <InputNumber min={1} max={5} />
+            <InputNumber defaultValue={1} min={1} max={5} />
           </Form.Item>
 
           <Form.Item
@@ -132,11 +135,12 @@ const GameCreationPage = () => {
             rules={[
               {
                 required: true,
+                message: "Please input the number of questions per quiz",
               },
             ]}
           >
             {/*To do: To set a default value of 1*/}
-            <InputNumber min={1} max={10} />
+            <InputNumber defaultValue={1} min={1} max={10} />
           </Form.Item>
 
           <Form.Item label="ENTER RELEVANT GAME TAGS">
@@ -218,9 +222,12 @@ const GameCreationPage = () => {
             <Button type="primary" htmlType="Back" className="backBtn">
               <Link to={"/"}>Back</Link>
             </Button>
-            <Button type="primary" htmlType="Next" className="nextBtn">
-              <Link to={"/editquiz"}>Next</Link>
-            </Button>
+            <Form.Item>
+              <Button type="primary" htmlType="Submit" className="nextBtn">
+                {/*To Do: Should only be able to Next when all the fields are validated */}
+                <Link to={"/editquiz"}>Next</Link>
+              </Button>
+            </Form.Item>
           </div>
         </Form>
       </div>
