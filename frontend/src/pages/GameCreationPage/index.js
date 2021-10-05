@@ -113,42 +113,32 @@ const GameCreationPage = () => {
             <Input placeholder="Enter Game Description" />
           </Form.Item>
 
-          <Form.Item label="NUMBER OF QUIZZES: ">
-            <Form.Item
-              name="Number of Quizzes"
-              noStyle
-              rules={[
-                {
-                  required: true,
-                },
-              ]}
-            >
-              <InputNumber min={1} max={5} />
-            </Form.Item>
-            <span className="ant-form-text"></span>
+          <Form.Item
+            label="NUMBER OF QUIZZES: "
+            name="Number of Quizzes"
+            rules={[
+              {
+                required: true,
+              },
+            ]}
+          >
+            {/*To do: To set a default value of 1*/}
+            <InputNumber min={1} max={5} />
           </Form.Item>
 
-          <Form.Item label="NUMBER 0F QUESTIONS PER QUIZ: ">
-            <Form.Item
-              name="Number of Questions"
-              noStyle
-              rules={[
-                {
-                  required: true,
-                },
-              ]}
-            >
-              <InputNumber min={1} max={10} />
-            </Form.Item>
-            <span className="ant-form-text"></span>
+          <Form.Item
+            label="NUMBER 0F QUESTIONS PER QUIZ: "
+            name="Number of Questions"
+            rules={[
+              {
+                required: true,
+              },
+            ]}
+          >
+            {/*To do: To set a default value of 1*/}
+            <InputNumber min={1} max={10} />
           </Form.Item>
 
-          {/* <Form.Item
-            wrapperCol={{
-              offset: 8,
-              span: 16,
-            }}
-          > */}
           <Form.Item label="ENTER RELEVANT GAME TAGS">
             <div>
               {tags.map((tag, index) => {
@@ -222,16 +212,16 @@ const GameCreationPage = () => {
             </div>
           </Form.Item>
 
-          <hr></hr>
+          <hr />
+
           <div className="button">
             <Button type="primary" htmlType="Back" className="backBtn">
-              <Link to={"/games"}>Back</Link>
+              <Link to={"/"}>Back</Link>
             </Button>
             <Button type="primary" htmlType="Next" className="nextBtn">
               <Link to={"/editquiz"}>Next</Link>
             </Button>
           </div>
-          {/* </Form.Item> */}
         </Form>
       </div>
     </div>
