@@ -12,6 +12,7 @@ import DashboardPage from "./pages/DashBoardPage";
 import EditGamePage from './pages/EditGamePage';
 import EditQuizPage from './pages/EditQuizPage';
 import GameCreationPage from "./pages/GameCreationPage";
+import quizcreationpage from "./pages/quizcreationpage";
 import SettingsPage from "./pages/SettingsPage";
 import { useAuthStore } from "./services/zustand/auth";
 
@@ -47,6 +48,7 @@ const App = () => {
               <Route path='/dashboard/editgame' exact component={EditGamePage} /> 
               <Route path='/dashboard/editquiz' exact component={EditQuizPage} />
               <Route path="/gamecreation" exact component={GameCreationPage} />
+              <Route path="/gamecreation/quizcreation" exact component={quizcreationpage} />
             </Switch>
           </Content>
           <SiteFooter />
