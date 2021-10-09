@@ -22,7 +22,7 @@ const App = () => {
 
   const [isMenuClosed, setIsMenuClosed] = React.useState(false);
 
-  if (!signedIn) {
+  if (signedIn) {
     return (
       <div className="App-guest">
         <LandingPage />
