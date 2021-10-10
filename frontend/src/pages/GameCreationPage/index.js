@@ -125,7 +125,7 @@ const GameCreationPage = () => {
               },
             ]}
           >
-            {/*To do: To set a default value of 1*/}
+            
             <InputNumber
               defaultValue={1}
               min={1}
